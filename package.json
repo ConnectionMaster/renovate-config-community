@@ -1,0 +1,44 @@
+{
+  "name": "renovate-config-community",
+  "description": "Renovate preset package hosted for the community",
+  "version": "0.0.0-semantic-release",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renovatebot/renovate-config-community.git"
+  },
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "bugs": {
+    "url": "https://github.com/renovatebot/renovate-config-community/issues"
+  },
+  "homepage": "https://github.com/renovatebot/renovate-config-community",
+  "engines": {
+    "node": ">= 8.11.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-promise": "3.7.0",
+    "prettier": "1.12.1",
+    "semantic-release": "15.4.0"
+  },
+  "publishConfig": {
+    "tag": "latest"
+  },
+  "release": {
+    "branch": "master",
+    "tagFormat": "${version}",
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {
+          "type": "docs",
+          "scope": "readme.md",
+          "release": "patch"
+        }
+      ]
+    }
+  }
+}

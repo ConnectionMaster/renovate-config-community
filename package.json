@@ -15,7 +15,7 @@
     "node": ">= 8.11.0"
   },
   "devDependencies": {
-    "semantic-release": "15.9.15"
+    "semantic-release": "17.2.3"
   },
   "publishConfig": {
     "tag": "latest"
